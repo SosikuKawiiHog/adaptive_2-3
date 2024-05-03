@@ -1,0 +1,42 @@
+.idea{
+    margin-bottom: 80px;
+    h2{
+        text-align: center;
+        font-size: 32px;
+        @media screen and (max-width: 576px) {
+            font-size: 27px;
+        }
+    }
+    .ideas{
+        margin-bottom: 54px;
+    }
+    .idea, .ideas__card{
+        @media screen and (max-width: 576px) {
+            gap: 50px;
+        }
+        display: flex;
+        gap: 24px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        padding: auto 80px;
+        margin-bottom: 50px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        .ideas__card-name{
+            font-size: 20px;
+            text-align: center;
+        }
+        .ideas__card-description{
+            font-size: 18px;
+            text-align: center;
+            height: 100%;
+            @media screen and (max-width: 576px) {
+                font-size: 16px;
+            }
+        }
+    }
+}

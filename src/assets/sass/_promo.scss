@@ -1,0 +1,81 @@
+.promo{
+    margin-bottom: 80px;
+    h1{
+        font-size: 42px;
+        @media screen and (max-width: 576px) {
+            font-size: 27px;
+        }
+    }
+    p{
+        color: #8F99AC;
+        font-size: 18px;
+        @media screen and (max-width: 576px) {
+            font-size: 16px;
+        }
+    }
+    .promos__title{
+        padding-top: 56px;
+    }
+    .promos-img{
+        @media screen and (max-width: 576px) {
+            display: none;
+        }
+    }
+    .promos-img-mobile{
+        display: none;
+        @media screen and (max-width: 576px) {
+            display: block;
+        }
+    }
+    .promos__buttonslist{
+        display: flex;
+        grid-gap: 15px;
+        padding-top: 19px;
+        @media screen and (max-width: 576px) {
+            flex-direction: column;
+            grid-gap: 8px;
+        }
+        .btn-primary{
+            background-color: #4047E2 !important;
+            padding: 10px 30px;
+            font-size: 16px;
+            border-radius: 15px;
+            height: 50px;
+            width: 180px;
+            transition: box-shadow 0.3s, transform 0.3s;
+            &:hover {
+                box-shadow: 0px 0px 10px 0px #4047E2;
+            }
+            &:focus {
+                transform: scale(0.95);
+            }
+            @media screen and (max-width: 576px) {
+                width: 295px;
+                height: 50px;
+            }
+        }
+        .btn-outline-primary{
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 15px;
+            border-color: #4047E2 !important;
+            width: 220px;
+            height: 50px;
+            @media screen and (max-width: 576px) {
+                width: 295px;
+                height: 50px;
+            }
+            span{
+                color:#4047E2;
+            }
+            &:focus{
+                background: none !important;
+                transform: scale(0.95);
+            }
+            &:hover{
+                box-shadow: 0px 0px 10px 0px #4047E2 !important;
+                background: none !important;
+            }
+        }
+    }
+}

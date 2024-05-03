@@ -1,0 +1,42 @@
+.class{
+    margin-bottom: 80px;
+    @media screen and (min-width: 576px) {
+        width: auto;
+        height: 401px;
+        background-color: #DFE1FF;
+    }
+    .classes{
+        @media screen and (min-width: 576px) {
+            padding-top: 73px;
+        }
+        display: flex;
+        h2{
+            font-size: 32px;
+            @media screen and (max-width: 576px) {
+                font-size: 27px;
+            }
+        }
+        p{
+            font-size: 18px;
+            color: #3F3A51;
+            line-height: 25px;
+            @media screen and (max-width: 576px) {
+                font-size: 16px;
+            }
+        }
+        .classes-img{
+            padding-top: 7px;
+            @media screen and (max-width: 576px) {
+                display: none;
+            }
+        }
+    }
+}
+.classes-img-mobile{
+    @media screen and (max-width: 576px) {
+        display: block;
+    }
+    @media screen and (min-width: 576px) {
+        display: none;
+    }
+}
